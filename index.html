@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trenitalia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <h1>Calcola il prezzo del tuo biglietto</h1>
+
+  <!-- Inizio prima sezione -->
+  <section class="first-section">
+
+    <div class="box-calcola">
+
+      <div class="col">
+
+        <label for="nome">Nome e cognome :</label>
+        <input type="text" id="nome" placeholder="Inserisci il tuo nome..">
+
+      </div>
+
+      <div class="col">
+
+        <label for="numerokm">Km da percorrere :</label>
+        <input type="number" id="numerokm" placeholder="Inserisci i km..">
+
+      </div>
+
+      <div class="col">
+
+        <label for="eta">Fascia d'età :</label>
+        <select id="eta">
+          <option value="minorenne">Minorenne</option>
+          <option value="maggiorenne">Maggiorenne</option>
+          <option value="Over65">Over 65</option>
+        </select>
+
+      </div>
+
+    </div>
+
+    <div class="comandi">
+
+      <button id="genera" class="my_btn_one" type="button" name="button">Genera</button>
+      <button id="annulla" class="my_btn_two" type="button" name="button">Annulla</button>
+
+    </div>
+
+  </section>
+  <!-- Fine prima sezione -->
+
+  <!-- Inizio biglietto -->
+  <h2>Il tuo biglietto</h2>
+
+  <div id="dati" class="hidden">
+
+    <h4>Dettagli passeggero</h4>
+
+    <table>
+
+      <tr>
+
+        <th>Nome passeggero</th>
+        <th>Offerta</th>
+        <th>Carrozza</th>
+        <th>Codice CP</th>
+        <th>Costo biglietto</th>
+
+      </tr>
+
+      <tr>
+
+        <td><span id="nome-passeggero"></span></td>
+        <td><span id="offerta-passeggero"></span></td>
+        <td><span id="carrozza"></span></td>
+        <td><span id="codice-cp"></span></td>
+        <td><span id="costo-biglietto"></span></td>
+
+      </tr>
+
+    </table>
+
+  </div>
+  <!-- Fine biglietto -->
+
+  <script src="js/script.js" charset="utf-8"></script>
+
+</body>
+</html>
